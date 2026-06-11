@@ -1,6 +1,8 @@
-﻿namespace HotelBookingSystem.ConsoleApp.Interfaces;
+﻿using HotelBookingSystem.ConsoleApp.Models;
+
+namespace HotelBookingSystem.ConsoleApp.Interfaces;
 
 public interface IBookingService
 {
-    decimal CalculateTotalCost(int nights, decimal pricePerNight);
+    decimal CalculateTotalCost(Customer customer, int nights, decimal pricePerNight);
 }
